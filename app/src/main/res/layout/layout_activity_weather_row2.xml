@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/activityweather_Imageview_morningicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_morning" />
+        <TextView
+            android:id="@+id/activityweather_TextView_morningtemp"
+            android:layout_below="@+id/activityweather_Imageview_morningicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/WhiteText"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <ImageView
+            android:id="@+id/activityweather_Imageview_dayicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_day"/>
+        <TextView
+            android:id="@+id/activityweather_TextView_daytemp"
+            android:layout_below="@+id/activityweather_Imageview_dayicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/WhiteText"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <ImageView
+            android:id="@+id/activityweather_Imageview_eveningicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_evening"/>
+        <TextView
+            android:id="@+id/activityweather_TextView_eveningtemp"
+            android:layout_below="@+id/activityweather_Imageview_eveningicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/WhiteText"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:id="@+id/activityweather_Imageview_nighticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_night"/>
+        <TextView
+            android:id="@+id/activityweather_TextView_nighttemp"
+            android:layout_below="@+id/activityweather_Imageview_nighticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/WhiteText"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

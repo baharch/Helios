@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_gravity="center_horizontal"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:id="@+id/activityweather_linearlayout_lineartop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/activityweather_SimpleDraweeView_weathericon"
+            android:layout_margin="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="9dp"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/activityweather_textview_City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteText"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/activityweather_textview_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteText"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/activityweather_textview_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/WhiteText"
+                android:textStyle="bold"/>
+            <!--/////-->
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp">
+            <ImageView
+                android:id="@+id/activityweather_Imageview_maxicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_max"/>
+            <TextView
+                android:id="@+id/activityweather_TextView_maxtemp"
+                android:layout_below="@+id/activityweather_Imageview_maxicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteText"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="1dp">
+            <ImageView
+                android:id="@+id/activityweather_Imageview_minicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_min"/>
+            <TextView
+                android:id="@+id/activityweather_TextView_mintemp"
+                android:layout_below="@+id/activityweather_Imageview_minicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteText"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activityweather_textview_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/WhiteText"
+        android:textStyle="italic"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.bahar.helios.ForecastActivity">
+    <ImageView
+        android:contentDescription=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/WhiteText"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/activityForecast_TextView_cityname"/>
+    <ListView
+        android:id="@+id/activityForecast_listView_myList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityForecast_TextView_cityname"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1dp"/>
+</RelativeLayout>
+

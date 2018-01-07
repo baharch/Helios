@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/bg">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="org.bahar.helios.WeatherActivity">
+    <LinearLayout
+        android:id="@+id/menu_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:layout_width="30dp"
+            android:id="@+id/activityweather_menu_forecast"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_new_forecast" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:id="@+id/activityweather_menu_setting"
+            style="?android:buttonBarButtonStyle"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_new_setting"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/menu_linearlayout"
+        android:id="@+id/activityweather_linearlayout_linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!--***************main**************-->
+        <include android:id="@+id/activityweatehr_include_main" layout="@layout/layout_activity_weather_row1"/>
+        <!--***************day time**************-->
+        <include android:id="@+id/activityweatehr_include_daytime" layout="@layout/layout_activity_weather_row2"/>
+        <!--**************chart***************-->
+        <include android:id="@+id/activityweatehr_include_chart" layout="@layout/activity_chart"/>
+        <!--***************details*************-->
+         <include android:id="@+id/activityweatehr_include_detail" layout="@layout/layout_activity_weather_row4"/>
+        <!--*****************************-->
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

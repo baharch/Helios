@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.bahar.helios">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:fullBackupContent="true"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_helios_logo"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LauncherActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WeatherActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForecastActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ChangeCityActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

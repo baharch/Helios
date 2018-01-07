@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Helios</string>
+    <string name="select_city">Selected City</string>
+    <!--Weather String-->
+    <string name="direction">Wind Direction : </string>
+    <string name="speed">Wind Speed : </string>
+    <string name="pressure">Pressure : </string>
+    <string name="humidity">Humidity : </string>
+    <string name="cloudiness">Cloudiness : </string>
+    <string name="sunset">Sunset : </string>
+    <string name="sunrise">Sunrise : </string>
+    <!--Luncher-->
+    <string name="Developer">Developed by Bahar.org</string>
+    <!--ChangeCity-->
+    <string name="selected_lable">Selected City and Units</string>
+
+
+
+</resources>
